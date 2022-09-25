@@ -2,7 +2,43 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-        System.out.println("Привет мир!");
+//        int beerNum = 99;
+//        String word = "бутылок (бутылки)";
+//
+//        while (beerNum >= 1) {
+//            if (beerNum == 1) {
+//                word = "бутылка";
+//            }
+//
+//            System.out.println(beerNum + " " + word + " пива на стене");
+//            System.out.println(beerNum + " " + word + " пива.");
+//            System.out.println("Возьми одну");
+//            System.out.println("Пусти по кругу");
+//            beerNum = beerNum - 1;
+//            if (beerNum > 0) {
+//                System.out.println(beerNum + " " + word + " пива на стене");
+//            }else {
+//                System.out.println("Нет бутылок пива на стене");
+//            }
+//        }
+
+        int x = 3;
+        while (x > 0) {
+            if (x > 2) {
+                System.out.print("a");
+            }
+            x = x - 1;
+            System.out.print("-");
+            if (x == 2) {
+                System.out.print("b c");
+            }
+            x = x - 1;
+            System.out.print("-");
+            if (x == 1) {
+                System.out.print("d");
+            }
+            x = x - 1;
+        }
     }
 }
+
