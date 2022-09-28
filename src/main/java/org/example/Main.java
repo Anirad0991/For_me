@@ -1,50 +1,50 @@
 package org.example;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-//        int beerNum = 99;
-//        String word = "бутылок (бутылки)";
-//
-//        while (beerNum >= 1) {
-//            if (beerNum == 1) {
-//                word = "бутылка";
-//            }
-//
-//            System.out.println(beerNum + " " + word + " пива на стене");
-//            System.out.println(beerNum + " " + word + " пива.");
-//            System.out.println("Возьми одну");
-//            System.out.println("Пусти по кругу");
-//            beerNum = beerNum - 1;
-//            if (beerNum > 0) {
-//                System.out.println(beerNum + " " + word + " пива на стене");
-//            }else {
-//                System.out.println("Нет бутылок пива на стене");
-//            }
-//        }
+   int x = 5;
+   int y = 9;
+   int z = x + y;
+        System.out.println(z);
+   double a = 7.5;
+   double b = a * 2;
+   double c = a * 3;
+        System.out.println(b);
+        System.out.println(c);
+   int d = 2;
+   int e = 8;
+   int v = d * 10 + e;
+        System.out.println(v);
+   int l = 74;
+   int i = l / 3;
+        System.out.println(i);
 
+        String new1 = "Hello world!";
+        System.out.println(new1);
 
-        class Dog {
-            int size;
-            String breed;
-            String name;
+        String new2 = "H-e-l-l-o-,-f-r-i-e-n-d!";
+        System.out.println(new2);
 
-            void bark() {
-                System.out.println("Гав! Ваф!");
-            }
-        }
+        String new3 = "+++";
+        String new4 = "!!!!";
+        String new5 = "??";
+        System.out.println(new3);
+        System.out.println(new4);
+        System.out.println(new5);
 
-        class DogRestDrive {
-            public static void main (String[] args) {
-                Dog d = new  Dog();
-                d.size = 40;
-                d.bark();
-                System.out.println(d.size);
-            }
-        }
-
+        System.out.print(new3);
+        System.out.print(new4);
+        System.out.print(new5);
     }
-
 }
-
-
+class targil2 {
+    static Scanner reader = new Scanner(System.in);
+    public static void main(String[] args) {
+        int a = reader.nextInt();
+        System.out.println("aa="+(a*a));
+        System.out.println("a10="+(a*10));
+    }
+}
 
