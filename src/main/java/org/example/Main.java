@@ -145,3 +145,110 @@ class  exempel2_15 {
 }
 
 // 29.09.2022 книга глава 5 ст 125, задачи 2.16 ст. 12
+
+
+class SeeWar {
+
+    public String checkYourself(String stringGuess) {
+        int guess = Integer.parseInt(stringGuess);
+        String result = "Мимо";
+
+        for (int cell : locationCells){
+            if(guess == cell){
+                result = "Попал";
+                numOfHits++;
+                break;
+            }
+        }
+        if(numOfHits == locationCells.length){
+            result = "Потопил";
+        }
+        System.out.println(result);
+        return result;
+    }
+    public class SimpleDotComTestDrive{
+        public static void main (String[] args){
+            SimpleDotCom dot = new SimpleDotCom();
+            int[] location = {2, 3, 4};
+            dot.setLocationCells(location);
+
+            String  userGuess = "2";
+            String result = dot.checkYourself(userGuess);
+
+            String testResult = "Неудача";
+            if(result.equals("Попал")){
+                testResult = "Пройден";
+            }
+            System.out.println(testResult);
+        }
+    }
+    public class SimpleDotCom{
+        int [] locationCells;
+        int numOfHits = 0;
+
+        public void  setLocationCells(int[] locs) {
+            locationCells = locs;
+        }
+
+        public String checkYourself(String stringGuess) {
+            int guess = Integer.parseInt(stringGuess);
+            String result = "Мимо";
+
+            for (int cell : locationCells){
+                if(guess == cell){
+                    result = "Попал";
+                    numOfHits++;
+                    break;
+                }
+            }
+            if(numOfHits == locationCells.length){
+                result = "Потопил";
+            }
+            System.out.println(result);
+            return result;
+
+        }
+        public static  void main (String[] args){
+            int numOfGuesses = 0;
+            GameHelper helper = new GameHelper();
+
+
+            SimpleDotCom theDotCom = new SimpleDotCom();
+
+            int randomNum = (int) (Math.random()*5);
+
+            int[] location = {randomNum, randomNum+1, randomNum+2};
+            theDotCom.setLocationCells(location);
+            boolean isAlive = true;
+
+            while (isAlive == true){
+                String guess = helper.getUserInputs("Введите число");
+                String result = theDotCom.checkYourself(guess);
+                numOfGuesses++;
+                if(result.equals("Потопил")){
+                    isAlive = false;
+                    System.out.println("Вам потребовалось " + numOfGuesses + " попыток(и)");
+                }
+            }
+        }
+    }
+}
+// страница 142 нужно добавить код про helper
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
