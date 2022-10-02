@@ -417,12 +417,12 @@ class example2_30 {
         int hour = reader.nextInt();
         int min = reader.nextInt();
 
-        if (hour <= 23 & hour >= 0 || min <= 59 & min >= 0) {
-            int secFromMid = hour * 3600 + min * 60;
-            int minFromMid = secFromMid / 60;
+        if (hour <= 23 & hour >= 0 || min <= 59 & min >= 0) { // условие для того что-бы получаь только корректное время, если оно не корректное будем уходить в ошибку
+            int secFromMid = hour * 3600 + min * 60; // вычесляю сколько секунд прошло от полуночи до полученного времени
+            int minFromMid = secFromMid / 60; // вычесляю сколько минут прошло от полуночи до полученного времени
 
-            int secToMid = 86440 - secFromMid;
-            int minToMid = 1440 - minFromMid;
+            int secToMid = 86440 - secFromMid; // вычесляю сколько секунд сталось до полуночи от полученного времени
+            int minToMid = 1440 - minFromMid; // вычесляю сколько минут сталось до полуночи от полученного времени
 
             System.out.println("Секунд прошло с полуночи " + secFromMid + ". Минут прошло с полуночи " + minFromMid);
             System.out.println("Секунд до полуночи " + secToMid + ". Минут до полуночи " + minToMid);
@@ -434,7 +434,112 @@ class example2_30 {
 
 // Задачи 2.31, использование библиотеки java
 
+class example2_31 {
+    static Scanner reader = new Scanner(System.in);
+    public static void main(String[] args) {
+        double m = reader.nextDouble(); // масса
+        double v =reader.nextDouble(); // скорость
+        double a = 2;
+        v = Math.pow(v, a); // возводим в квадрат скорость
+        double e = m * v / 2; // формула кинетической энергии тела
+        System.out.println(e);
+    }
+}
 
+class example2_32 {
+    static Scanner reader = new Scanner(System.in);
+    public static void main(String[] args) {
+        double x = reader.nextDouble();
+        x = 1 / x; // формула поиска обратного числа
+        System.out.println(x);
+    }
+}
+class example2_33 {
+    static Scanner reader = new Scanner(System.in);
+    public static void main(String[] args) {
+       double a = reader.nextDouble(); // основание первое
+       double b = reader.nextDouble(); // основание второе
+       double h = reader.nextDouble(); // высота трапеции
+
+        double s = ( (a + b) / 2) * h; // площадь трапеции с двумя основаниями и высотой
+        double s1 = 0.5 * (a + b) * h;
+        System.out.println(s);
+        System.out.println(s1);
+    }
+}
+class example2_34 {
+    static Scanner reader = new Scanner(System.in);
+    public static void main(String[] args) {
+    String firstWord = "Привет,";
+    String name = reader.nextLine(); // считываем строку с помощью сканера
+
+        System.out.println(firstWord + " " + name);
+    }
+}
+
+class example2_35 {
+    static Scanner reader = new Scanner(System.in);
+    public static void main(String[] args) {
+        String firstName = reader.nextLine(); // считываем строку с помощью сканера
+        String lastName = reader.nextLine(); // считываем строку с помощью сканера
+        String word = "Вас зовут ";
+
+        System.out.println(word + firstName + " " + lastName);
+    }
+}
+
+class example2_36 {
+    static Scanner reader = new Scanner(System.in);
+    public static void main(String[] args) {
+        String lastName = reader.nextLine(); // считываем строку с помощью сканера
+        String city = reader.nextLine();
+        String sentens = "Пассажир " + lastName + " вылетает в " + city;
+
+        System.out.println(sentens);
+    }
+}
+
+class example2_37 {
+    static Scanner reader = new Scanner(System.in);
+    public static void main(String[] args) {
+        String firstName = reader.nextLine(); // считываем строку с помощью сканера
+        String lastName = reader.nextLine(); // считываем строку с помощью сканера
+
+        System.out.println(firstName + " " + lastName);
+        System.out.println(lastName + " " + firstName);
+    }
+}
+
+class example2_38 {
+    static Scanner reader = new Scanner(System.in);
+    public static void main(String[] args) {
+        String firstName = reader.nextLine(); // считываем строку с помощью сканера
+        String middleName = reader.nextLine();
+        String lastName = reader.nextLine(); // считываем строку с помощью сканера
+
+        String init = firstName.substring(0, 1); // метод строковой переменной который возвращает по индексу нужный символ, можно только начальный и тогда вернется все
+        String init1 = middleName.substring(0, 1);
+        String init2 = lastName.substring(0, 1);
+            System.out.println(init + init1 + init2);
+
+    }
+}
+
+class example2_39 {
+    static Scanner reader = new Scanner(System.in);
+    public static void main(String[] args) {
+        String firstName = reader.nextLine(); // считываем строку с помощью сканера
+        String middleName = reader.nextLine();
+        String lastName = reader.nextLine(); // считываем строку с помощью сканера
+
+        String init = firstName.substring(0, 1); // метод строковой переменной который возвращает по индексу нужный символ, можно только начальный и тогда вернется все
+        String init1 = middleName.substring(0, 1);
+        String sentens = init + "." + init1 + ". " + lastName;
+        System.out.println(sentens);
+    }
+}
+
+//Наследование и полиморфизм ст 189. Задачи переходи к третьему разделу, иди писать следующий класс пользуйся публичными переменными не копипасти все методы
 
 
 
