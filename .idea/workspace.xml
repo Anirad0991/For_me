@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83fa5ffc-a2c8-4540-ad04-93c07ed64301" name="Changes" comment="1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Example4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Example3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Example3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Example4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Example4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,9 +43,9 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Example3_10">
-    <configuration name="Example3_10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Example3_10" />
+  <component name="RunManager" selected="Application.Example4_6">
+    <configuration name="Example4_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Example4_2" />
       <module name="For_me" />
       <extension name="coverage">
         <pattern>
@@ -58,8 +57,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Example3_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Example3_5" />
+    <configuration name="Example4_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Example4_3" />
       <module name="For_me" />
       <extension name="coverage">
         <pattern>
@@ -71,8 +70,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Example3_6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Example3_6" />
+    <configuration name="Example4_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Example4_4" />
       <module name="For_me" />
       <extension name="coverage">
         <pattern>
@@ -84,8 +83,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Example3_7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Example3_7" />
+    <configuration name="Example4_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Example4_5" />
       <module name="For_me" />
       <extension name="coverage">
         <pattern>
@@ -97,8 +96,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Example3_9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Example3_9" />
+    <configuration name="Example4_6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Example4_6" />
       <module name="For_me" />
       <extension name="coverage">
         <pattern>
@@ -112,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Example3_10" />
-        <item itemvalue="Application.Example3_9" />
-        <item itemvalue="Application.Example3_7" />
-        <item itemvalue="Application.Example3_6" />
-        <item itemvalue="Application.Example3_5" />
+        <item itemvalue="Application.Example4_6" />
+        <item itemvalue="Application.Example4_5" />
+        <item itemvalue="Application.Example4_4" />
+        <item itemvalue="Application.Example4_3" />
+        <item itemvalue="Application.Example4_2" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664905802385</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="1">
+      <created>1665337632411</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665337632411</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
